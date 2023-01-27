@@ -3,7 +3,9 @@
     /* margin:auto;
     max-width:1000px; */
 }
-
+html {
+    width:100vw;
+}
 .header {
     display:flex;
     border: 1px solid red;
@@ -41,4 +43,15 @@
   border:1px solid red;
     
 }
-
+.section {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:1rem;
+    border: 1px solid red;
+    width:100%;
+}
+.section div {
+    width:50%;
+    
+ }
