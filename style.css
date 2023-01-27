@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,25 +14,35 @@ body {
 .header {
     display: flex;
     border: 1px solid red;
+    align-items:baseline;    
+    
 }
 
 .header .headLeft {
     border: 2px solid blueviolet;
     flex: 1;
-    margin: 10px
+    margin: 10px 10px 10px 0;
+    font-family: 'Style Script', cursive;
+    font-size:18px;
+    
+    
 }
 
 .header .headRight {
     border: 2px solid black;
-    flex: 1;
+    flex: auto;
     margin: 10px 10px 10px 0px;
     text-align: right;
+    font-family: 'Lora', serif;
+    font-size:12px;
+        
 }
 
 .header .magGlass {
-    margin: 10px 10px 10px 0px;
-    height: 5.2rem;
-    width: 80px;
+    margin: 1   0px 10px 0px 0px;
+   /* vertical-align: top; */
+    width: 50px;
+    height:50px;
     border: 2px solid red;
 
 }
@@ -40,12 +53,22 @@ body {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    border: 1px solid green;
+   
 
 }
 
 .item {
-    border: 1px solid red;
+    
+    font-family: 'Lora', serif;
+    color:black;
+    font-weight:bold;
+
+}
+.item a {
+    text-decoration:none;
+    font-family: 'Lora', serif;
+    color:black;
+    font-weight:bold;
 
 }
 
@@ -54,6 +77,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
+    width:80%;
+    margin:auto;
 
 
 }
@@ -72,6 +97,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 
 }
 
@@ -88,6 +114,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 
 .block3 {
@@ -102,6 +129,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 
 .block4 {
@@ -116,6 +144,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 .block5 {
     background-image: url('https://media.istockphoto.com/id/909987486/photo/zucchini-noodles-in-a-bowl.jpg?b=1&s=170667a&w=0&k=20&c=z_Ag9aL0rHfEcfSWkqftWWYia9H_eWKiOMI0ikgCFwU=');
@@ -128,6 +157,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 
 .block6 {
@@ -141,6 +171,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 .block7 {
     background-image: url('https://cdn.pixabay.com/photo/2018/02/27/18/41/muesli-3186256__480.jpg');
@@ -153,6 +184,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 .block8 {
     background-image: url('https://media.istockphoto.com/id/1078587036/photo/red-velvet-cake-decorated-rose-flowers-on-white-plate.jpg?b=1&s=170667a&w=0&k=20&c=LR4mwy_oXViNrS62-2ESfZePtbC69uPCYC-myXOMmQU=');
@@ -165,6 +197,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 
 .block9 {
@@ -179,6 +212,7 @@ body {
     border: 2px solid black;
     text-align: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
 }
 
 img {
@@ -199,20 +233,32 @@ img {
     justify-content:space-around;
     color:red; 
     border: 1px solid black;    
-    width:70%;
+    width:60%;
     margin:auto;
+    
+    
 }
 .footer1 p {   
     border: 1px solid black;  
     color:white;
+    font-family: 'Lora', serif;
+    font-size:12px;
+   
 }
-
+.footer1 a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Lora', serif;
+    font-size:12px;
+}
 .icons img {
     margin: 10px 10px 10px 0px;
-    height: 30px;
-    width: 30px;
-    border: 2px solid red;
+    height: 25px;
+    width: 25px;
+    
 }
 .copyRight p{
     color:white;
+    font-family: 'Lora', serif;
+    font-size:12px;
 }
