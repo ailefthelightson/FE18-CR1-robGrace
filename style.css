@@ -1,57 +1,208 @@
 * {
-    box-sizing:border-box;
-    /* margin:auto;
-    max-width:1000px; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-html {
-    width:100vw;
+
+body {
+    width: 100%;
 }
+
 .header {
-    display:flex;
+    display: flex;
     border: 1px solid red;
 }
-.header .headLeft{
+
+.header .headLeft {
     border: 2px solid blueviolet;
-    flex:1;
-    margin:10px
+    flex: 1;
+    margin: 10px
 }
-.header .headRight{
+
+.header .headRight {
     border: 2px solid black;
-    flex:1;
+    flex: 1;
     margin: 10px 10px 10px 0px;
     text-align: right;
 }
+
 .header .magGlass {
     margin: 10px 10px 10px 0px;
-    height:5.2rem;
+    height: 5.2rem;
     width: 80px;
     border: 2px solid red;
-    
+
 }
 
-.nav{
+.nav {
     /* height: 10vh; */
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    text-align:center;  
+    text-align: center;
     border: 1px solid green;
-   
+
 }
 
- .item {
-  border:1px solid red;
-    
+.item {
+    border: 1px solid red;
+
 }
+
 .section {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap:1rem;
-    border: 1px solid red;
-    width:100%;
+    gap: 1rem;
+
+
 }
-.section div {
-    width:50%;
-    
- }
+
+.block {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(10px);
+
+}
+
+.block p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+
+}
+
+.block2 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/29/16/23/burger-2018627__480.jpg');
+    background-size: cover;
+    height: 100%;
+
+}
+
+.block2 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+
+.block3 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block3 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+
+.block4 {
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/01/18/21/eclair-3366430__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block4 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+.block5 {
+    background-image: url('https://media.istockphoto.com/id/909987486/photo/zucchini-noodles-in-a-bowl.jpg?b=1&s=170667a&w=0&k=20&c=z_Ag9aL0rHfEcfSWkqftWWYia9H_eWKiOMI0ikgCFwU=');
+    background-size: cover;
+    height: 100%;
+}
+.block5 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+
+.block6 {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.block6 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+.block7 {
+    background-image: url('https://cdn.pixabay.com/photo/2018/02/27/18/41/muesli-3186256__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.block7 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+.block8 {
+    background-image: url('https://media.istockphoto.com/id/1078587036/photo/red-velvet-cake-decorated-rose-flowers-on-white-plate.jpg?b=1&s=170667a&w=0&k=20&c=LR4mwy_oXViNrS62-2ESfZePtbC69uPCYC-myXOMmQU=');
+    background-size: cover;
+    height: 100%;
+}
+.block8 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+
+.block9 {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block9 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+}
+
+img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid green;
+}
+.footer1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    color:red; 
+    border: 1px solid black;    
+    width:70%;
+    margin:auto;
+}
+.footer1 p {   
+    border: 1px solid black;  
+    color:white;
+}
