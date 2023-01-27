@@ -273,3 +273,22 @@ img {
     font-size:12px;
     
 }
+
+@media screen and (min-width:350px) and (max-width:800px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+
+    }
+
+    .section p {
+        font-size:18px;
+    }
+    /* body {
+        background-color: pink;
+    } */
+}
