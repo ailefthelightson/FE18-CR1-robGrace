@@ -11,6 +11,8 @@ body {
     width: 100%;
 }
 
+
+/* THE HEADER */
 .header {
     display: flex;
     
@@ -21,17 +23,31 @@ body {
 
 .header .headLeft {
     /* border: 2px solid blueviolet; */
-    flex: 5;
+    flex: 1;
     margin: 10px 10px 10px 0;
     font-family: 'Style Script', cursive;
     font-size:18px;
     
     
 }
-
+.header .headRecipe {
+    
+    flex:1;
+    margin: 10px 20px 10px 0px;
+    text-align: right;
+    
+    /* border: 2px solid red; */
+}
+.headRecipe a {
+    text-decoration:none;
+    color:black;
+    font-family: 'Lora', serif;
+    font-size:24px;
+    font-weight:bold;
+}
 .header .headRight {
     /* border: 2px solid black; */
-    flex: 1;
+    flex: 0;
     margin: 10px 1px 10px 0px;
     text-align: right;
     font-family: 'Lora', serif;
@@ -39,10 +55,9 @@ body {
         
 }
 
-
 .header .magGlass {
     
-    margin: 1   0px 10px 0px 0px;
+    margin: 10px 10px 0px 0px;
    vertical-align: baseline;
     
     /* border: 2px solid red; */
@@ -55,7 +70,7 @@ body {
     width: 60px;
     height:60px;
 }
-
+/* THE NAVE BAR */
 .nav {
     /* height: 10vh; */
     display: flex;
@@ -80,7 +95,7 @@ body {
     font-weight:bold;
 
 }
-
+/* THE GRID */
 .section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -229,6 +244,7 @@ img {
     border: 2px solid black;
 }
 
+/* FOOTER */
 .footer{
     display: flex;
     flex-direction: column;
@@ -273,8 +289,79 @@ img {
     font-size:12px;
     
 }
+/* RECIPE OF THE MONTH PAGE */
 
-@media screen and (min-width:350px) and (max-width:800px) {
+iframe {
+    display:block;
+    margin:auto;
+}
+
+/* ABOUT PAGE */
+
+.bigChef{
+    font-weight:bold;
+    font-family:'Lora', serif;
+    text-align:center;
+}
+#bigChef span{
+    font-style:italic;
+}
+#chefPic    {
+    height:150px;
+    width: 150px;
+    display:block;
+    margin:auto;
+}
+.aboutText {
+    font-family:'Lora', serif;
+    margin: 20px 20px;
+    text-align:center;
+    width:auto;
+}
+/* MEDIA QUERIES */
+/* @media screen and (min-width:1201px)   {
+   body{
+    max-width:1250px;
+   } */
+   
+}
+@media screen and (min-width:553px) and (max-width:768px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+    }
+
+  .headRecipe a{
+        font-size:20px;
+    }
+    .header .headRight{
+        font-size:10px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:552px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+    }
+
+     .headRecipe a{
+        font-size:18px;
+    }
+    .header .headRight{
+        font-size:10px;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
     .section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -287,6 +374,15 @@ img {
 
     .section p {
         font-size:18px;
+    }
+    .header .headLeft{
+        font-size:12px;
+    }
+     .headRecipe a{
+        font-size:16px;
+    }
+    .header .headRight{
+        font-size:8px;
     }
     /* body {
         background-color: pink;
