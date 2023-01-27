@@ -13,14 +13,15 @@ body {
 
 .header {
     display: flex;
-    border: 1px solid red;
-    align-items:baseline;    
+    
+    align-items:center;    
+   
     
 }
 
 .header .headLeft {
-    border: 2px solid blueviolet;
-    flex: 1;
+    /* border: 2px solid blueviolet; */
+    flex: 5;
     margin: 10px 10px 10px 0;
     font-family: 'Style Script', cursive;
     font-size:18px;
@@ -29,22 +30,30 @@ body {
 }
 
 .header .headRight {
-    border: 2px solid black;
-    flex: auto;
-    margin: 10px 10px 10px 0px;
+    /* border: 2px solid black; */
+    flex: 1;
+    margin: 10px 1px 10px 0px;
     text-align: right;
     font-family: 'Lora', serif;
     font-size:12px;
         
 }
 
-.header .magGlass {
-    margin: 1   0px 10px 0px 0px;
-   /* vertical-align: top; */
-    width: 50px;
-    height:50px;
-    border: 2px solid red;
 
+.header .magGlass {
+    
+    margin: 1   0px 10px 0px 0px;
+   vertical-align: baseline;
+    
+    /* border: 2px solid red; */
+    flex:0;
+    text-align:right;
+    width:60px;
+
+}
+.magGlass img{
+    width: 60px;
+    height:60px;
 }
 
 .nav {
@@ -249,7 +258,7 @@ img {
     text-decoration: none;
     color:white;
     font-family: 'Lora', serif;
-    font-size:12px;
+    font-size:12px; 
 }
 .icons img {
     margin: 10px 10px 10px 0px;
@@ -258,7 +267,9 @@ img {
     
 }
 .copyRight p{
+    text-decoration:none;
     color:white;
     font-family: 'Lora', serif;
     font-size:12px;
+    
 }
