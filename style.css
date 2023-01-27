@@ -191,7 +191,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    border: 1px solid green;
+    /* background-color: black; */
 }
 .footer1{
     display:flex;
@@ -204,5 +204,15 @@ img {
 }
 .footer1 p {   
     border: 1px solid black;  
+    color:white;
+}
+
+.icons img {
+    margin: 10px 10px 10px 0px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+}
+.copyRight p{
     color:white;
 }
