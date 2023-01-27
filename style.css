@@ -6,7 +6,6 @@
 
 .header {
     display:flex;
-   
     border: 1px solid red;
 }
 .header .headLeft{
@@ -17,7 +16,29 @@
 .header .headRight{
     border: 2px solid black;
     flex:1;
-    margin: 10px;
-    margin-right: 20px;
+    margin: 10px 10px 10px 0px;
     text-align: right;
 }
+.header .magGlass {
+    margin: 10px 10px 10px 0px;
+    height:5.2rem;
+    width: 80px;
+    border: 2px solid red;
+    
+}
+
+.nav{
+    /* height: 10vh; */
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align:center;  
+    border: 1px solid green;
+   
+}
+
+ .item {
+  border:1px solid red;
+    
+}
+
