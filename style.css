@@ -1,69 +1,388 @@
-@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  width: 100%;
+    width: 100%;
 }
+
 
 /* THE HEADER */
 .header {
-  display: flex;
-  align-items: center;
-}
-.header .headLeft {
-  flex: 1;
-  margin: 10px 10px 10px 0;
-  font-family: "Style Script", cursive;
-  font-size: 18px;
-}
-.header .headRecipe {
-  flex: 1;
-  margin: 10px 20px 10px 0;
-  text-align: right;
-}
-.header .headRecipe a {
-  text-decoration: none;
-  color: black;
-  font-family: "Lora", serif;
-  font-size: 24px;
-  font-weight: bold;
-}
-.header.headRight {
-  flex: 0;
-  margin: 10px 1px 10px 0px;
-  text-align: right;
-  font-family: "Lora", serif;
-  font-size: 12px;
-}
-.header.magGlass {
-  margin: 10px 10px 0px 0px;
-  vertical-align: baseline;
-  flex: 0;
-  text-align: right;
-  width: 60px;
-}
-.header .magGlass img {
-  width: 60px;
-  height: 60px;
+    display: flex;
+    
+    align-items:center;    
+   
+    
 }
 
+.header .headLeft {
+    /* border: 2px solid blueviolet; */
+    flex: 1;
+    margin: 10px 10px 10px 0;
+    font-family: 'Style Script', cursive;
+    font-size:18px;
+    
+    
+}
+.header .headRecipe {
+    
+    flex:1;
+    margin: 10px 20px 10px 0px;
+    text-align: right;
+    
+    /* border: 2px solid red; */
+}
+.headRecipe a {
+    text-decoration:none;
+    color:black;
+    font-family: 'Lora', serif;
+    font-size:24px;
+    font-weight:bold;
+}
+.header .headRight {
+    /* border: 2px solid black; */
+    flex: 0;
+    margin: 10px 1px 10px 0px;
+    text-align: right;
+    font-family: 'Lora', serif;
+    font-size:12px;
+        
+}
+
+.header .magGlass {
+    
+    margin: 10px 10px 0px 0px;
+   vertical-align: baseline;
+    
+    /* border: 2px solid red; */
+    flex:0;
+    text-align:right;
+    width:60px;
+
+}
+.magGlass img{
+    width: 60px;
+    height:60px;
+}
+/* THE NAVE BAR */
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
+    /* height: 10vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+   
+
 }
-.nav.item {
-  font-family: "Lora", serif;
-  color: black;
-  font-weight: bold;
+
+.item {
+    
+    font-family: 'Lora', serif;
+    color:black;
+    font-weight:bold;
+
 }
-.nav .item a {
-  font-family: "Lora", serif;
-  decoration: none;
-}/*# sourceMappingURL=style.css.map */
+.item a {
+    text-decoration:none;
+    font-family: 'Lora', serif;
+    color:black;
+    font-weight:bold;
+
+}
+/* THE GRID */
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width:80%;
+    margin:auto;
+
+
+}
+
+.block {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(10px);
+
+}
+
+.block p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+
+}
+
+.block2 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/29/16/23/burger-2018627__480.jpg');
+    background-size: cover;
+    height: 100%;
+
+}
+
+.block2 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+
+.block3 {
+    background-image: url('https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block3 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+
+.block4 {
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/01/18/21/eclair-3366430__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block4 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+.block5 {
+    background-image: url('https://media.istockphoto.com/id/909987486/photo/zucchini-noodles-in-a-bowl.jpg?b=1&s=170667a&w=0&k=20&c=z_Ag9aL0rHfEcfSWkqftWWYia9H_eWKiOMI0ikgCFwU=');
+    background-size: cover;
+    height: 100%;
+}
+.block5 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+
+.block6 {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.block6 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+.block7 {
+    background-image: url('https://cdn.pixabay.com/photo/2018/02/27/18/41/muesli-3186256__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.block7 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+.block8 {
+    background-image: url('https://media.istockphoto.com/id/1078587036/photo/red-velvet-cake-decorated-rose-flowers-on-white-plate.jpg?b=1&s=170667a&w=0&k=20&c=LR4mwy_oXViNrS62-2ESfZePtbC69uPCYC-myXOMmQU=');
+    background-size: cover;
+    height: 100%;
+}
+.block8 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+
+.block9 {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/15/41/appetizer-1846026__480.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.block9 p {
+    color: white;
+    margin: 70% 0 0 0;
+    border: 2px solid black;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lora', serif;
+}
+
+img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+}
+.footer1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    color:red; 
+    border: 1px solid black;    
+    width:60%;
+    margin:auto;
+    
+    
+}
+.footer1 p {   
+    border: 1px solid black;  
+    color:white;
+    font-family: 'Lora', serif;
+    font-size:12px;
+   
+}
+.footer1 a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Lora', serif;
+    font-size:12px; 
+}
+.icons img {
+    margin: 10px 10px 10px 0px;
+    height: 25px;
+    width: 25px;
+    
+}
+.copyRight p{
+    
+    color:white;
+    font-family: 'Lora', serif;
+    font-size:12px;
+    
+}
+/* RECIPE OF THE MONTH PAGE */
+
+iframe {
+    display:block;
+    margin:auto;
+}
+
+/* ABOUT PAGE */
+
+.bigChef{
+    font-weight:bold;
+    font-family:'Lora', serif;
+    text-align:center;
+}
+#bigChef span{
+    font-style:italic;
+}
+#chefPic    {
+    height:150px;
+    width: 150px;
+    display:block;
+    margin:auto;
+}
+.aboutText {
+    font-family:'Lora', serif;
+    margin: 20px 20px;
+    text-align:center;
+    width:auto;
+}
+/* MEDIA QUERIES */
+/* chrome has been buggy at certain widths so I've attempted to address them in the min-width and max-width 
+values - FOR THE RECORD::afterCommon breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops, and 1201px and above for extra large screens like TV. */
+   
+}
+@media screen and (min-width:553px) and (max-width:768px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+    }
+
+  .headRecipe a{
+        font-size:20px;
+    }
+    .header .headRight{
+        font-size:10px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:552px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+    }
+
+     .headRecipe a{
+        font-size:18px;
+    }
+    .header .headRight{
+        font-size:10px;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        width:80%;
+        margin:auto;
+
+    }
+
+    .section p {
+        font-size:18px;
+    }
+    .header .headLeft{
+        font-size:12px;
+    }
+     .headRecipe a{
+        font-size:16px;
+    }
+    .header .headRight{
+        font-size:8px;
+    }
+    /* body {
+        background-color: pink;
+    } */
+}
