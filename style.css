@@ -10,14 +10,60 @@ body {
   width: 100%;
 }
 
-/*THE HEADER*/
+/* THE HEADER */
 .header {
   display: flex;
   align-items: center;
 }
-.header.headLeft {
+.header .headLeft {
   flex: 1;
   margin: 10px 10px 10px 0;
   font-family: "Style Script", cursive;
   font-size: 18px;
+}
+.header .headRecipe {
+  flex: 1;
+  margin: 10px 20px 10px 0;
+  text-align: right;
+}
+.header .headRecipe a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header.headRight {
+  flex: 0;
+  margin: 10px 1px 10px 0px;
+  text-align: right;
+  font-family: "Lora", serif;
+  font-size: 12px;
+}
+.header.magGlass {
+  margin: 10px 10px 0px 0px;
+  vertical-align: baseline;
+  flex: 0;
+  text-align: right;
+  width: 60px;
+}
+.header .magGlass img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.nav.item {
+  font-family: "Lora", serif;
+  color: black;
+  font-weight: bold;
+}
+.nav .item a {
+  font-family: "Lora", serif;
+  decoration: none;
 }/*# sourceMappingURL=style.css.map */
