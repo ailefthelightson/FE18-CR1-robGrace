@@ -326,7 +326,7 @@ iframe {
   text-align: center;
 }
 
-#bigChef span {
+.bigChef span {
   font-style: italic;
 }
 
@@ -339,9 +339,9 @@ iframe {
 
 .aboutText {
   font-family: 'Lora', serif;
-  margin: 20px 20px;
+  margin: 20px auto;
   text-align: center;
-  width: auto;
+  width: 80%;
 }
 
 /* MEDIA QUERIES */
