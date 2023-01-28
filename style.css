@@ -348,7 +348,6 @@ iframe {
 /* chrome has been glitchy at certain widths (you can see the "recipe of the month" text changes weirdly) so I've attempted to address them in the min-width and max-width 
 values - FOR THE RECORD::afterCommon breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops, and 1201px and above for extra large screens like TV. */
 
-}
 
 @media screen and (min-width:553px) and (max-width:768px) {
   .section {
